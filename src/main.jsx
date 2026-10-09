@@ -4,10 +4,11 @@ import App from './App.jsx'
 import './index.css'
 import { Provider } from 'react-redux'
 import store from './store.js'
+// Wrap the vessel in the protective shield of the global Redux Provider
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
-    <App />
+      <App />
     </Provider>
   </React.StrictMode>,
-)
+);
